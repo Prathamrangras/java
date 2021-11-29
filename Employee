@@ -1,0 +1,32 @@
+import java.util.*;
+
+class employee{
+public static void main(String args[])
+{
+  Scanner sc=new Scanner(System.in);
+
+ int year[]=new int[5];
+ String name[]=new String[5];
+ String add[]=new String[5];
+
+ int i;
+for(i=0;i<3;i++)
+{
+  System.out.println("Enter year of joining");
+  year[i]=sc.nextInt();
+  System.out.println("Enter name");
+  name[i]=sc.next();
+  System.out.println("Enter address");
+  add[i]=sc.next();
+
+}
+
+ System.out.println("displaying array");
+
+ for(i=0;i<3;i++)
+ {
+  System.out.println("year of joining\t\t  \t\t name \t\t address");
+  System.out.println(year[i]+"\t\t\t" +"\t\t"+name[i]+"\t\t" +add[i]);
+ }
+}
+}
